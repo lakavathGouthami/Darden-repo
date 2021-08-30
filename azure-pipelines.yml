@@ -14,7 +14,7 @@ variables:
   dockerRegistryServiceConnection: '798c16f8-5ae7-4495-ac2d-c2a61e3364bc'
   imageRepository: 'newaks'
   containerRegistry: 'acrtest45.azurecr.io'
-  dockerfilePath: '.pipeline/Dockerfile'
+  dockerfilePath: 'pipeline/Dockerfile'
   tag: '$(Build.BuildId)'
   imagePullSecret: 'acrtest4515c8-auth'
 
