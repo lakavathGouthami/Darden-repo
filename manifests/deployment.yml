@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: newaks 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: newaks
+  template:
+    metadata:
+      labels:
+        app: newaks 
+    spec:
+      containers:
+        - name: newaks 
+          image: acrtest45.azurecr.io/newaks
+          ports:
+          - containerPort: 8080
